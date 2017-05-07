@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  display: block;
+  height: 100vh;
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 0;
+  font-size: 8.5vmin;
+  text-align: center;
+  padding: 10vw;
+  position: relative;
+}
+
+a:nth-child(1) {
+  background: #E91E63
+}
+
+a:nth-child(2) {
+  background: #F06292
+}
+
+a:nth-child(3) {
+  background: #AB47BC
+}
+
+a:nth-child(4) {
+  background: #26C6DA
+}
+
+a:nth-child(5) {
+  background: #8BC34A
+}
+
+a:nth-child(6) {
+  background: #E64A19
+}
+
+a:nth-child(7) {
+  background: #CB0E40
+}
+
+a:nth-child(8) {
+  background: #F06292
+}
+
+a::after {
+  content: '';
+  background: url(http://www.clker.com/cliparts/n/6/Z/t/h/h/flower-md.png) no-repeat center center;
+  background-size: contain;
+  height: 30vmin;
+  width: 30vmin;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-bottom: -15vmin;
+  margin-left: -15vmin;
+  z-index: 999;
+  animation: spin 10s linear infinite;
+}
+
+a:nth-child(even)::after {
+  background: url(http://www.clker.com/cliparts/n/2/M/X/a/P/purple-flower-hi.png) no-repeat center center !important;
+  background-size: contain !important;
+  animation: spin 10s linear reverse infinite !important;
+}
+
+a:nth-child(8)::after {
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    transform: rotate(180deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+img {
+  padding-left: 1rem;
+}
