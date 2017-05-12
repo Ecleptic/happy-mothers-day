@@ -50,7 +50,23 @@ a:nth-child(7) {
 }
 
 a:nth-child(8) {
+  background: #E91E63
+}
+
+a:nth-child(9) {
   background: #F06292
+}
+
+a:nth-child(10) {
+  background: #AB47BC
+}
+
+a:nth-child(11) {
+  background: #26C6DA
+}
+
+a:nth-child(12) {
+  background: #8BC34A
 }
 
 a::after {
@@ -74,7 +90,7 @@ a:nth-child(even)::after {
   animation: spin 10s linear reverse infinite !important;
 }
 
-a:nth-child(8)::after {
+a:nth-child(12)::after {
   display: none;
 }
 
