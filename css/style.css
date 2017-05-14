@@ -19,6 +19,7 @@ a {
   text-align: center;
   padding: 10vw;
   position: relative;
+  text-decoration: none;
 }
 
 a:nth-child(1) {
